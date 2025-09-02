@@ -1,0 +1,5 @@
+This is append mode
+In file handling via python
+This is append mode
+
+This is a+ mode
