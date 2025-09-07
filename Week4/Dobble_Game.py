@@ -4,23 +4,44 @@ The person should tell which letter is common in both.'''
 
 import random
 print("Welcome to Dobble Game!!")
+n = int(input("Select Difficult Level(5-10): "))
 
-str1 = random.choice(["AEIMQ","BFJNQ","GKOQ","DHLPQ","AFKPR","BELOR","CHINR","DGJMR","AGLNS","BHKMS","CEJPS","DFIOS","AHJOT","BGIPT","CFLMT","DEKNT","ABCDU","EFGHU","IJKLU","MNOPU"])
-str2 = random.choice(["AEIMQ","BFJNQ","GKOQ","DHLPQ","AFKPR","BELOR","CHINR","DGJMR","AGLNS","BHKMS","CEJPS","DFIOS","AHJOT","BGIPT","CFLMT","DEKNT","ABCDU","EFGHU","IJKLU","MNOPU"])
+AlphabetList = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
+#list1 = random.choice(["AEIMQ","BFJNQ","GKOQ","DHLPQ","AFKPR","BELOR","CHINR","DGJMR","AGLNS","BHKMS","CEJPS","DFIOS","AHJOT","BGIPT","CFLMT","DEKNT","ABCDU","EFGHU","IJKLU","MNOPU"])
+#list2 = random.choice(["AEIMQ","BFJNQ","GKOQ","DHLPQ","AFKPR","BELOR","CHINR","DGJMR","AGLNS","BHKMS","CEJPS","DFIOS","AHJOT","BGIPT","CFLMT","DEKNT","ABCDU","EFGHU","IJKLU","MNOPU"])
 
-print("List 1:",str1)
-print("List 2:",str2)
+def selectlist(AlphabetList,n):
+    common = random.choice(AlphabetList)
+    list1 = [common]
+    list2 = [common]
+    letter = ''
 
-answer = input("You have to find that which letter is common in both the above lists ")
+    while len(list1)<n:
+        letter = random.choice(AlphabetList)
+        if letter not in list1:
+            list1.append(letter)
 
-for i in str1:
-    for j in str2:
-        if i == j:
-            letter = i
+    while len(list2)<n:
+        letter = random.choice(AlphabetList)
+        if letter not in list1 and letter not in list2:
+            list2.append(letter)
+        
+    random.shuffle(list1)
+    random.shuffle(list2)
 
-if answer == letter:
+    return list1,list2,common
+   
+list1,list2,common=selectlist(AlphabetList,n)
+
+print("List 1:",list1)
+print("List 2:",list2)
+
+
+answer = input("You have to find that which letter is common in both the above lists: ")
+
+if answer == common:
     print("Correct!!")
 else:
     print("Nope!!")
-    print("The correct common letter is ",letter)
+    print("The correct common letter is ",common)
 
