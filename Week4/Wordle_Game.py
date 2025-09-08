@@ -18,8 +18,7 @@ print("=========================================================================
 
 WordList =["love", "time", "book", "moon", "star", "fire", "tree", "road", "rain", "wind", "gold", "song", "bird", "fish", "play", "ball", "king", "girl", "work", "code","ship", "land", "hope", "rock", "sand", "wave", "dark", "snow", "cold", "warm", "blue", "good", "fast", "slow", "high", "light", "heart", "water", "stone", "apple", "bread", "plant", "earth", "dream", "cloud", "sound", "music", "chair", "table", "river", "field", "grass", "house", "smile", "happy", "magic", "story", "peace", "clean", "sweet", "dance", "write", "think", "sleep", "green", "black", "white", "power", "laugh", "teach", "sunset", "forest", "castle", "friend", "school", "animal", "family", "garden", "winter", "summer","autumn", "spring", "flower", "planet", "silver", "little", "strong", "beauty", "wonder", "moment", "yellow", "orange", "purple", "bridge", "nature", "future", "memory", "spirit", "bright", "simple","gentle", "circle", "energy", "travel", "dreams"]
 
-#word = list(random.choice(WordList))
-word = list("madam")
+word = list(random.choice(WordList))
 guess = []
 chance = 7
 wrongletter = []
