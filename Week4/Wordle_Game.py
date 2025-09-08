@@ -18,7 +18,8 @@ print("=========================================================================
 
 WordList =["love", "time", "book", "moon", "star", "fire", "tree", "road", "rain", "wind", "gold", "song", "bird", "fish", "play", "ball", "king", "girl", "work", "code","ship", "land", "hope", "rock", "sand", "wave", "dark", "snow", "cold", "warm", "blue", "good", "fast", "slow", "high", "light", "heart", "water", "stone", "apple", "bread", "plant", "earth", "dream", "cloud", "sound", "music", "chair", "table", "river", "field", "grass", "house", "smile", "happy", "magic", "story", "peace", "clean", "sweet", "dance", "write", "think", "sleep", "green", "black", "white", "power", "laugh", "teach", "sunset", "forest", "castle", "friend", "school", "animal", "family", "garden", "winter", "summer","autumn", "spring", "flower", "planet", "silver", "little", "strong", "beauty", "wonder", "moment", "yellow", "orange", "purple", "bridge", "nature", "future", "memory", "spirit", "bright", "simple","gentle", "circle", "energy", "travel", "dreams"]
 
-word = list(random.choice(WordList))
+#word = list(random.choice(WordList))
+word = list("madam")
 guess = []
 chance = 7
 wrongletter = []
@@ -39,13 +40,16 @@ while(chance>0 and guess!=word):
             chance = chance - 1
             print("Incorrect Guess!!\nChances left = ",chance)
             wrongletter.append(letter)
+            
     if letter in word:
-        for i in range(len(word)):
-            if letter == word[i]:
-                guess[i] = letter
-        wrongletter.append(letter)
-        print(guess)
-        print("Correct guess!!\nChances left = ",chance)
+        if letter in guess:
+            print("already guessed")
+        else:
+            for i in range(len(word)):
+                if letter == word[i]:
+                    guess[i] = letter
+            print(guess)
+            print("Correct guess!!\nChances left = ",chance)
 
 if guess == word:
     print("You guessed it right!!\nWinner..")
