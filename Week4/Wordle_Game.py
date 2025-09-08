@@ -30,21 +30,22 @@ print("Guess the Word: ",guess)
 
 while(chance>0 and guess!=word):
     letter = input();
-    chance = chance - 1
+
     if letter in wrongletter:
         print("Incorrect guess!!")
-        chance = chance + 1
     
     if letter not in word:
         if letter not in wrongletter:
+            chance = chance - 1
             print("Incorrect Guess!!\nChances left = ",chance)
             wrongletter.append(letter)
-
-    for i in range(len(word)):
-        if letter == word[i]:
-            guess[i] = letter
-            print(guess)
-            print("Correct guess!!\nChances left = ",chance)
+    if letter in word:
+        for i in range(len(word)):
+            if letter == word[i]:
+                guess[i] = letter
+        wrongletter.append(letter)
+        print(guess)
+        print("Correct guess!!\nChances left = ",chance)
 
 if guess == word:
     print("You guessed it right!!\nWinner..")
