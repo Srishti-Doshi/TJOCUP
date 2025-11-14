@@ -1,4 +1,4 @@
-#  Joy of Computing Using Python  
+# Joy of Computing Using Python  
 ### *Inspired by the NPTEL course by Prof. Sudarshan Iyengar, IIT Ropar*
 
 This repository contains my learning, practice programs, and implementations based on the **“Joy of Computing Using Python”** course.  
@@ -6,23 +6,21 @@ The aim is to build strong logical thinking and apply Python to solve real-world
 
 ---
 
-## 🎯 About the Course
+## ───────── About the Course ─────────
 
-**The Joy of Computing Using Python** is not just a programming course —  
-it is a whirlwind tour of logic, curiosity, and computational joy.
-
-Designed with anecdotes, analogies, and lively examples, the course transforms:
+**The Joy of Computing Using Python** is a fun and insightful introduction to programming.  
+It uses simple stories, analogies, and real-life examples to convert:
 
 - **Abstractions → Insights**  
 - **Engineering → Art**  
 - **Beginners → Logical Thinkers**
 
-Using Python as the medium, the course trains you to think programmatically and solve problems elegantly.  
-By the end, you don't just learn Python — you learn how to think like a computer scientist.
+The course encourages logical thinking and helps you approach problems programmatically.  
+You don’t just learn Python — you learn how to think like a computer scientist.
 
 ---
 
-## 🗂️ Course Topics Covered
+## ───────── 🗂️ Course Topics Covered ─────────
 
 ### 🌱 Foundations
 - Motivation for Computing  
@@ -84,7 +82,7 @@ By the end, you don't just learn Python — you learn how to think like a comput
 
 ---
 
-## 🎯 Objective
+## ───────── 🎯 Objective ─────────
 - Strengthen Python fundamentals  
 - Practice logical problem-solving  
 - Understand computing ideas through simple programs  
@@ -92,7 +90,7 @@ By the end, you don't just learn Python — you learn how to think like a comput
 
 ---
 
-## 🤝 Contributing
+## ───────── 🤝 Contributing ─────────
 
 Contributions are welcome!  
 You can add:
@@ -105,11 +103,11 @@ You can add:
 
 ---
 
-## ⭐ Acknowledgement
+## ───────── Acknowledgement ─────────
 
 This repository is inspired by the NPTEL course **“The Joy of Computing Using Python”** taught by  
 **Prof. Sudarshan Iyengar, IIT Ropar**,  
-whose storytelling and clarity make Python truly joyful.
+whose teaching style makes computing enjoyable and simple.
 
 ---
 
